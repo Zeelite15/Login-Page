@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background: chocolate;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 20px 20px 20px;
+    background: transparent;
+}
+.title{
+    text-align: center;
+}
+.title > h1 > span{
+    font-size: large;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    font-size: large;
+    margin-top: 1.4rem;
+}
+input{
+    width: 270px;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    outline: none;
+    border-bottom: 2px solid #913400;
+    background: transparent;
+}
+.register{
+    margin: 2rem;
+}
+.register > a:link{
+    color:aliceblue;
+    font-style: italic;
+}
+.register > a:visited{
+    color: #000;
+}
+.track{
+    display: none;
+}
+.showTrack{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: chocolate;
+    text-align: center;
+}
+/*The .track display is set to none
+because it is the next step after clicking
+on the sign-up button. So therefore, the sign-up
+button activates the .track section*/ 
+h2{
+    margin-bottom: 3.5rem;
+}
+button + p{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.selectionbtn{
+    width: 70%;
+    height: 45px;
+    color: chocolate;
+    background: #000;
+    border: 0;
+    font-size: large;
+    font-variant: small-caps;
+    font-weight:bolder;
+    cursor: pointer;
+}
+
+.animation{
+    animation: welly .5s ease-out alternate 5;
+}
+
+@keyframes welly{
+    from{
+        background: chocolate;
+        color: #000;
+    }
+    30%{
+        background: #000;
+        color: chocolate;
+    }
+    60%{
+        background: #000;
+        color: chocolate;
+    }
+    to{
+        background: chocolate;
+        color: #000;
+    }
+}

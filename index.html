@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CraneWell</title>
+</head>
+<body>
+    <div id="signup" class="container">
+        <header class="title">
+            <h1>CraneWell Techologies <br>
+            <span>Sign-Up Page</span>
+            </h1>
+        </header>
+        <div class="form">
+            <label for="firstName">First Name <br>
+                <input type="text" id="firstName" required autofocus>
+            </label>
+            <label for="lastName">Last Name <br>
+                <input type="text" id="lastName" required>
+            </label>
+            <label for="dob">Date of Birth <br>
+                <input type="date" id="dob" min="1920-01-01" max="2006-01-01" required>
+            </label>
+            <label for="password">Password <br>
+                <input type="password" id="password" minlength="8" required>
+            </label>
+            <label for="password2">Confirm Password <br>
+                <input type="password" id="password2"  required>
+            </label>
+            <p class="register">Don't have an account? Click <a href="#">Here</a></p>
+            <button id="btn" class="selectionbtn">Next</button>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+    <div id="track" class="track">
+        <h2>What team do you want to work with?</h2>
+        <button id="dev" class="selectionbtn">Development Team</button>
+        <p>OR</p>
+        <button id="admin" class="selectionbtn">Administrative Team</button>
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------- -->
+    <div id="fordev" class="track">
+        <h3>CONGRATULATIONS!!! </h3> 
+        <p>You are now a part of the CraneWell Developer Team!!!</p>
+    </div>
+    <div id="foradmin" class="track">
+        <h3>CONGRATULATIONS!!!</h3>
+        <p>You are now a part of the CraneWell Administrative Team!!!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
